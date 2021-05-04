@@ -1,0 +1,5 @@
+name:  OneBlockChallenge
+main:  ru.OBC.Main.Main
+version:  0.0.1
+api-version: 1.16
+authors: [itzHiti, Lairon]
