@@ -6,6 +6,8 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import ru.OBC.ListenerE;
+
 import java.io.File;
 import java.util.logging.Logger;
 
@@ -24,6 +26,7 @@ public class Main extends JavaPlugin {
 
 
     public void onEnable() {
+		Bukkit.getPluginManager().registerEvents(new ListenerE(), this);
         Bukkit.getConsoleSender().sendMessage(ChatColor.RED + " / "); // оформление ебашь с красным или каким хочешь цветом, ок да?
         log.info("Enabled.");
         if (!this.file.exists() ) {    //Если файла не существует
