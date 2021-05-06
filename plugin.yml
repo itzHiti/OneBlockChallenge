@@ -1,7 +1,14 @@
 name:  OneBlockChallenge
 main:  ru.OBC.Main.Main
-version:  0.0.1
+version:  0.0.5
 api-version: 1.16
 authors: [itzHiti, Lairon]
 commands:
-  OBC:
+  config:
+    usage: /config
+    description: Основные команды для JSON-текстов.
+    aliases: [conf]
+  obc:
+    usage: /obc
+    description: Просто чтобы релоадить плагин.
+    aliases: [oneblackchallenge]

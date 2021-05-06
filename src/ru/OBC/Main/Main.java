@@ -2,16 +2,14 @@ package ru.OBC.Main;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
-import org.bukkit.Location;
-import org.bukkit.Particle;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
-import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
 
 import ru.OBC.ListenerE;
 import ru.OBC.rl;
+import ru.OBC.jsonx;
 
 import java.io.File;
 import java.util.logging.Logger;
@@ -34,6 +32,8 @@ public class Main extends JavaPlugin {
 
     public void onEnable() {
 		Bukkit.getPluginManager().registerEvents(new ListenerE(this), this);
+        getCommand("config").setExecutor(new jsonx(this));
+		Bukkit.getPluginManager().registerEvents(new jsonx(this), this);
         Bukkit.getConsoleSender().sendMessage(ChatColor.RED + " / "); // оформление ебашь с красным или каким хочешь цветом, ок да?
         log.info("Enabled.");
         if (!this.file.exists() ) {    //Если файла не существует
@@ -61,3 +61,5 @@ public class Main extends JavaPlugin {
     }
 
 }
+
+
