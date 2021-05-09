@@ -19,6 +19,7 @@ public class rl implements CommandExecutor {
 		sender.sendMessage("§cÏåğåçàãğóçêà");
 		plugin.reloadConfig();
 		sender.sendMessage(ChatColor.GREEN+"Óñïåøíî!");
+		sender.sendMessage("§aÇàãğóæåí:§6 OneBlockChallenge§f îò Lairon è itzHiti§6§o OneBlock§f§o îò IJAMinecraft");
 		}
 		return false;
 		

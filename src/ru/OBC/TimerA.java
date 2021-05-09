@@ -11,14 +11,14 @@ import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 
 
-public class TimerB implements Runnable {
+public class TimerA implements Runnable {
 
 	private int t = 30;
 	private int id;
 	
     private final ru.OBC.Main.Main plugin;
 
-    public TimerB(ru.OBC.Main.Main plugin2) {
+    public TimerA(ru.OBC.Main.Main plugin2) {
         this.plugin = plugin2;
     }
     public void random(Location loc, int prog, Player p, int sec) {
@@ -35,7 +35,7 @@ public class TimerB implements Runnable {
 	public void run() {
 		
 		World w = Bukkit.getWorld("world");
-		Location loc = new Location(w, 0.5, 61, 0.5);
+		Location loc = new Location(w, 0.5, 61, 20.5);
     	loc.getBlock().setType(Material.BEDROCK);
     	ArmorStand a = (ArmorStand) loc.getWorld().spawnEntity(loc, EntityType.ARMOR_STAND);
     	a.setVisible(false);

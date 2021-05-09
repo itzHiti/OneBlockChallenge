@@ -2,6 +2,8 @@ package ru.OBC;
 
 import ru.OBC.Main.*;
 import org.bukkit.event.player.*;
+import org.bukkit.scoreboard.Team;
+
 import net.md_5.bungee.api.chat.hover.content.*;
 import net.md_5.bungee.api.chat.*;
 import org.bukkit.entity.*;
@@ -15,17 +17,20 @@ public class jsonx implements CommandExecutor, Listener
     public jsonx(final Main plugin) {
         this.plugin = plugin;
     }
+    Team breaker;
+    
     
     @EventHandler
     private void onPlayerJoin(final PlayerJoinEvent e) {
-        final TextComponent join = new TextComponent("§7§o  [?] Нажми сюда, чтобы открыть меню помощи.");
-        join.setClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/config help"));
-        join.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new Content[] { new Text("Открывает меню помощи.") }));
+        final TextComponent join = new TextComponent("§7§o  [?] Нажми сюда, чтобы открыть меню помощи."); // <- JSON-текст благодаря которому можно видеть ховер текст.
+        join.setClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/config help")); // <- JSON-текст который исполняет команда /config help от лица игрока.
+        join.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new Content[] { new Text("Открывает меню помощи.") })); // <- Что написано если навестись на текст выше.
         final Player p = e.getPlayer();
-        p.sendMessage("§aЗагружен:§6 OneBlockChallenge§f от Lairon и itzHiti§6§o OneBlock§f§o от IJAMinecraft");
-        p.spigot().sendMessage((BaseComponent)join);
+        
+        p.spigot().sendMessage((BaseComponent)join); // <- Выводит наш JSON-текст при каждом заходе игрока.      
     }
     
+	
     public boolean onCommand(final CommandSender sender, final Command cmd, final String label, final String[] args) {
         final Player p = (Player)sender;
         final int prog = this.plugin.getConfig().getInt(p + ".progress");
@@ -430,6 +435,35 @@ public class jsonx implements CommandExecutor, Listener
             final TextComponent back2 = new TextComponent("§7[Назад]");
             back2.setClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/config help"));
             back2.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new Content[] { new Text("Вернуться в меню помощи.") }));
+            p.sendMessage("");
+            p.sendMessage("");
+            p.sendMessage("");
+            p.sendMessage("");
+            p.sendMessage("");
+            p.sendMessage("");
+            p.sendMessage("");
+            p.sendMessage("");
+            p.sendMessage("");
+            p.sendMessage("");
+            p.sendMessage("");
+            p.sendMessage("");
+            p.sendMessage("");
+            p.sendMessage("");
+            p.sendMessage("");
+            p.sendMessage("");
+            p.sendMessage("");
+            p.sendMessage("");
+            p.sendMessage("");
+            p.sendMessage("");
+            p.sendMessage("");
+            p.sendMessage("");
+            p.sendMessage("");
+            p.sendMessage("");
+            p.sendMessage("");
+            p.sendMessage("");
+            p.sendMessage("");
+            p.sendMessage("");
+            p.sendMessage("");
             p.sendMessage(" §6Подземелье Джунглей");
             p.sendMessage(" §eСкрытое древними деревьями и покрытое виноградными лозами, находится подземелье.");
             p.sendMessage("");
@@ -601,35 +635,35 @@ public class jsonx implements CommandExecutor, Listener
             back2.setClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/config help"));
             back2.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new Content[] { new Text("Вернуться в меню помощи.") }));
             
-            p.sendMessage("");
-            p.sendMessage("");
-            p.sendMessage("");
-            p.sendMessage("");
-            p.sendMessage("");
-            p.sendMessage("");
-            p.sendMessage("");
-            p.sendMessage("");
-            p.sendMessage("");
-            p.sendMessage("");
-            p.sendMessage("");
-            p.sendMessage("");
-            p.sendMessage("");
-            p.sendMessage("");
-            p.sendMessage("");
-            p.sendMessage("");
-            p.sendMessage("");
-            p.sendMessage("");
-            p.sendMessage("");
-            p.sendMessage("");
-            p.sendMessage("");
-            p.sendMessage("");
-            p.sendMessage("");
-            p.sendMessage("");
-            p.sendMessage("");
-            p.sendMessage("");
-            p.sendMessage("");
-            p.sendMessage("");
-            p.sendMessage("");
+            p.sendMessage(" ");
+            p.sendMessage(" ");
+            p.sendMessage(" ");
+            p.sendMessage(" ");
+            p.sendMessage(" ");
+            p.sendMessage(" ");
+            p.sendMessage(" ");
+            p.sendMessage(" ");
+            p.sendMessage(" ");
+            p.sendMessage(" ");
+            p.sendMessage(" ");
+            p.sendMessage(" ");
+            p.sendMessage(" ");
+            p.sendMessage(" ");
+            p.sendMessage(" ");
+            p.sendMessage(" ");
+            p.sendMessage(" ");
+            p.sendMessage(" ");
+            p.sendMessage(" ");
+            p.sendMessage(" ");
+            p.sendMessage(" ");
+            p.sendMessage(" ");
+            p.sendMessage(" ");
+            p.sendMessage(" ");
+            p.sendMessage(" ");
+            p.sendMessage(" ");
+            p.sendMessage(" ");
+            p.sendMessage(" ");
+            p.sendMessage(" ");
             p.sendMessage(" §6Пустынные земли");
             p.sendMessage(" §eПеред вами лежит бесплодная земля.");
             p.sendMessage("");
@@ -740,3 +774,16 @@ public class jsonx implements CommandExecutor, Listener
         return false;
     }
 }
+
+
+
+
+//
+//
+//  this part was written by itzHiti
+// 
+// VK: https://vk.com/itzHiti
+//	
+//	If you reading this you are good at plugins ;)
+//
+//

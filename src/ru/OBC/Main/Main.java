@@ -1,5 +1,11 @@
 package ru.OBC.Main;
 
+/* OneBlockChallenge v.0.0.7
+*
+* Written for private use. Do not duplicate or republish.
+*/
+
+
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -15,9 +21,6 @@ import java.io.File;
 import java.util.logging.Logger;
 
 public class Main extends JavaPlugin {
-	
-
-
     Logger log = Logger.getLogger("Minecraft");
     //Получить доступ к консоли
     public File file = new File(getDataFolder() + File.separator + "config.yml");
