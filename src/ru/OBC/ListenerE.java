@@ -133,7 +133,7 @@ public class ListenerE implements Listener {
 			objective2.getScore(p.getDisplayName()).setScore(plugin.getConfig().getInt(p + ".progress"));
 			
 			objective.setDisplaySlot(DisplaySlot.BELOW_NAME);
-			objective2.setDisplayName("blocks");
+			objective2.setDisplayName("блоков");
 			objective2.setDisplaySlot(DisplaySlot.SIDEBAR);
 			objective2.setDisplayName("§6§lСломано блоков: ");   
 			
@@ -201,7 +201,7 @@ public class ListenerE implements Listener {
 			objective4.getScore(p.getDisplayName()).setScore(plugin.getConfig().getInt(p + ".progress"));
 			
 			objective3.setDisplaySlot(DisplaySlot.BELOW_NAME);
-			objective4.setDisplayName("blocks");
+			objective4.setDisplayName("блоков");
 			objective4.setDisplaySlot(DisplaySlot.SIDEBAR);
 			objective4.setDisplayName("§6§lСломано блоков: ");   
 
