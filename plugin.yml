@@ -1,6 +1,6 @@
 name:  OneBlockChallenge
 main:  ru.OBC.Main.Main
-version:  0.0.7
+version:  latest
 api-version: 1.16
 authors: [itzHiti, Lairon]
 commands:
